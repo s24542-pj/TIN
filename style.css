@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+    background-color: rgb(176, 202, 204);
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.header{
+    height: 50px;
+    background-color: rgb(248, 248, 248);
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    z-index: 2;
+    position: static;
+}
+#container{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo{
+    margin-right: auto;
+}
+.pages{
+    margin-top: 5px;
+}
+.pages ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: .5em;
+    margin: 0;
+}
+.pages li{
+    margin: 0 1em;
+}
+.pages a{
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    text-decoration: none;
+}
+.pages a:hover{
+    color: black;
+}
+.loginbox{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 12%;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 5%;
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 19px -3px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    position: absolute;
+    z-index: -2;
+}
+.loginbox input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-width: 1px;
+    padding: 4px;
+}
+.loginbox label{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.loginbox button{
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: gray;
+    width: 80%;
+}
+.loginbox button:hover{
+    background-color: rgb(128, 128, 128);
+    color: whitesmoke;
+}
+.logininfo{
+    position: absolute;
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 5%;
+    margin: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(241, 241, 241);
+    -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    z-index: -1;
+}
+.logininfo p{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.post{
+    position: absolute;
+    height: 101%;
+    background-color: rgb(226, 226, 226);
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
+    z-index: -1;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical; 
+}
+.post::-webkit-scrollbar{
+    width: 10px;
+    -webkit-appearance: none;
+}
+.post::-webkit-scrollbar-track{
+    background-color: rgb(226, 226, 226);
+}
+.post::-webkit-scrollbar-thumb{
+    outline: 1px solid slategrey;
+    background-color: rgb(172, 172, 172);
+    border-radius: 10px;
+}
+.postspace{
+    margin-left: 5%;
+    margin-right: 5%;
+}
