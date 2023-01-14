@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Blog xXx</title>
 </head>
-<body>
+<body onload="Displayallposts()">
     <section>
         <div class="header">
             <div id="container">
@@ -23,7 +24,7 @@
                             <a href="post.html">Post</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="author.html">Author</a>
+                            <a class="nav-link" onclick="Loginifitis()">Author</a>
                         </li>
                         <li>
                             <form class="searchbar">

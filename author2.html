@@ -6,7 +6,7 @@
     <script src="main.js"></script>
     <title>Blog xXx</title>
 </head>
-<body onload="Displayallpostsmain()">
+<body onload="Displaypost(),username()">
     <section>
         <div class="header">
             <div id="container">
@@ -26,26 +26,30 @@
                         <li>
                             <a class="nav-link" onclick="Loginifitis()">Author</a>
                         </li>
-                        <li>
-                            <form class="searchbar">
-                                <input class="searchbarin" type="text" placeholder="Search">
-                            </form>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="post">
-            <div id="postspace">
-                <div class="welcome">
-                    <h2>Welcome on our Blog!</h2>
-                    <p>Here you can share your thoughts with orher users.</p>
-                </div>
-                <div class="fewpost">
-                    <p class="p">Latest posts:</p>
-                    <div class="thisposts"></div>
-                </div>
+        <div id="profileinfo">
+            <div class="userblock">
+                <div id="usernameblock"></div>
+            <input id="logout" type="button" value="LOGOUT" onclick="Clear()">
             </div>
+            <div class="formblock">
+                <form (ngSubmit)="Getdata()">
+                    <label for="title">TITLE:</label>
+                    <input id="title" type="text">
+                    
+                    <label for="inside">zawartość:</label>
+                    <textarea rows="3" cols="60" id="inside"></textarea>
+
+                    <input id="buttonpost" type="button" onclick="Getdata()" value="POST IT">
+                    
+                </form>
+            </div>
+        </div>
+        <div class="postbox">
+            <button onclick="Removeallpost()"></button>
         </div>
     </section>
 </body>

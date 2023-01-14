@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Blog xXx</title>
 </head>
 <body>
@@ -23,12 +24,7 @@
                             <a href="post.html">Post</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="author.html">Author</a>
-                        </li>
-                        <li>
-                            <form class="searchbar">
-                                <input class="searchbarin" type="text" placeholder="Search">
-                            </form>
+                            <a class="nav-link" onclick="Loginifitis()">Author</a>
                         </li>
                     </ul>
                 </div>
@@ -38,13 +34,14 @@
             <p>You need to <b>login</b> to see your profile and add or delete your posts.</p>
         </div>
         <div class="loginbox">
-            <form>
+            <form (ngSubmit)="login()">
                 <label for="login">LOGIN:</label>
                 <input id="login" type="text">
 
                 <label for="password">PASSWORD:</label>
                 <input id="password" type="password">
-                <button>APPLY</button>
+                <input id="button" type="button" onclick="Loginsave()" value="LOGIN">
+                
             </form>
         </div>
     </section>
